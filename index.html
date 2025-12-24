@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-      <link rel="stylesheet" href="theme.css">
-      <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <main>
+        <div class="left">
+            <div class="top">
+                <label for="image" class="btn">Choose image
+                    <input type="file" id="image" accept="image/*" hidden>
+                </label>
+
+                <button id="reset"  class="btn">reset</button>
+                <button id="download" class="btn">Download</button>
+                <button id="save" class="btn">Save</button>
+            </div>
+            <div class="bottom">
+                <div class="placeholder">
+
+    <i class="ri-image-line"></i>
+<p>no image choosen</p>
+
+                </div>
+                <canvas id="img-canvas">
+
+                </canvas>
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>Filters</h2>
+<div class="filters">
+             
+            
+</div>
+ <div class="preset">
+
+        </div>
+        </div>
+       
+    </main>
+    <h1 class="edit">Edit images</h1>
+     <div class="saveImg">
+           
+        </div>
+  <script src="app.js"></script>
 </body>
+
 </html>
